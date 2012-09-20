@@ -1,2 +1,8 @@
 <h1>Posts#index</h1>
 <p>Find me at views/posts/index.html.erb</p>
+
+<ol>
+<% @posts.each do |post| %>
+	<li><%= post.body %></li>
+<% end %>
+</ol>

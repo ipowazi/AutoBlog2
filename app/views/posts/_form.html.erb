@@ -1,0 +1,10 @@
+<%= form_for @post do |f| %>
+
+    <%= f.label :user_id, :class => 'form_label' %><br />
+    <%= f.text_field :user_id, :class => 'form_field' %> <br /> <br />
+  
+    <%= f.label :body, :class => 'form_label' %><br />
+    <%= f.text_field :body, :class => 'form_field', :id => 'submission_text_field' %> <br />
+    <%= f.submit "Submit", :class => 'submit' %>
+<% end %>
+
