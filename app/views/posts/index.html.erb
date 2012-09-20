@@ -3,6 +3,6 @@
 
 <ol>
 <% @posts.each do |post| %>
-	<li><%= post.body %></li>
+	<li><%= link_to post.body, post %></li>
 <% end %>
 </ol>

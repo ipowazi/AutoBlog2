@@ -1,0 +1,17 @@
+<%= form_for @comment do |f| %>
+	<%= f.label :body %> <br />
+	<%= f.text_field :body %> <br /> <br />
+
+	<%= f.label :post_id %> <br />
+	<%= f.number_field :post_id %> <br /> <br />
+
+	<%= f.label :user_id %> <br />
+	<%= f.number_field :user_id %> <br /> <br />
+
+	<% if @comment.body %>
+		<%= f.submit "Update" %>
+	<% else %>
+		<%= f.submit "Submit" %>
+	<% end %>
+
+<% end %>
